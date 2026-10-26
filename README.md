@@ -1,5 +1,14 @@
 # ath10k-avm — Linux driver for the AVM FRITZ!WLAN USB Stick AC 430 MU-MIMO
 
+## How this was made
+
+This project was built with Claude Code (AI coding assistant).
+I set the goal and the general approach (using the behaviour of
+the Windows driver as a reference), ran the driver on my own
+hardware, reported what worked and what did not, and checked the
+speed with Cloudflare speed tests. Code quality was checked with
+two AI-assisted code reviews. I decided to publish it.
+
 Out-of-tree build of the in-kernel `ath10k_usb` driver with the changes needed to make the
 **AVM FRITZ!WLAN USB Stick AC 430 MU-MIMO** (USB ID `057c:8602`) work on Linux. The stick is
 a Qualcomm Atheros **QCA9377** with the high-latency (HL) firmware; AVM only ships a Windows driver.
